@@ -47,10 +47,12 @@ def run(songs)
   case run_response
     when "list"
       list(songs)
+      run(songs)
     when "play"
       play(songs)
+      run(songs)
     when "help"
-      help
+      run(songs)
     when "exit"
       exit_jukebox
     else
