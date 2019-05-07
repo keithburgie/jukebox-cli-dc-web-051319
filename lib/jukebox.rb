@@ -47,10 +47,10 @@ def run(songs)
   case run_response
     when "list"
       list(songs)
-      run(songs)
+      run_response = gets.chomp
     when "play"
       play(songs)
-      run(songs)
+      run_response = gets.chomp
     when "help"
       run(songs)
     when "exit"
